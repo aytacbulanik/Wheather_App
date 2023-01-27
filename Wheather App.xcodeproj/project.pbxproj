@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		523E718F298411B0004B6566 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523E718E298411B0004B6566 /* CurrentWeather.swift */; };
+		523E719129841217004B6566 /* CurrentWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523E719029841217004B6566 /* CurrentWeatherModel.swift */; };
 		52D2C49D2983F53000B12EB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D2C49C2983F53000B12EB5 /* AppDelegate.swift */; };
 		52D2C49F2983F53000B12EB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D2C49E2983F53000B12EB5 /* SceneDelegate.swift */; };
 		52D2C4A12983F53000B12EB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D2C4A02983F53000B12EB5 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		523E718E298411B0004B6566 /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		523E719029841217004B6566 /* CurrentWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherModel.swift; sourceTree = "<group>"; };
 		52D2C4992983F53000B12EB5 /* Wheather App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wheather App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D2C49C2983F53000B12EB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52D2C49E2983F53000B12EB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				52D2C4A52983F53100B12EB5 /* Assets.xcassets */,
 				52D2C4A72983F53100B12EB5 /* LaunchScreen.storyboard */,
 				52D2C4AA2983F53100B12EB5 /* Info.plist */,
+				523E718E298411B0004B6566 /* CurrentWeather.swift */,
+				523E719029841217004B6566 /* CurrentWeatherModel.swift */,
 			);
 			path = "Wheather App";
 			sourceTree = "<group>";
@@ -140,6 +146,8 @@
 			files = (
 				52D2C4A12983F53000B12EB5 /* ViewController.swift in Sources */,
 				52D2C49D2983F53000B12EB5 /* AppDelegate.swift in Sources */,
+				523E719129841217004B6566 /* CurrentWeatherModel.swift in Sources */,
+				523E718F298411B0004B6566 /* CurrentWeather.swift in Sources */,
 				52D2C49F2983F53000B12EB5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
