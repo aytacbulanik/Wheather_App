@@ -96,6 +96,9 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.clockwise" catalog="system"/>
+                                <connections>
+                                    <action selector="resreshButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QZX-3d-4lm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -118,6 +121,15 @@
                             <constraint firstItem="aLi-DS-DWz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="ymc-9z-C48"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="humindtyLabel" destination="Ohq-Av-jOS" id="HF0-8c-sb0"/>
+                        <outlet property="konumLabel" destination="ha1-iE-iF7" id="KXP-oj-chS"/>
+                        <outlet property="rainLabel" destination="lQR-Ye-zb7" id="i3C-Te-90Y"/>
+                        <outlet property="refreshButtonOut" destination="LNe-0P-ZJT" id="fzR-Qy-oQJ"/>
+                        <outlet property="summaryLabel" destination="Z1h-Gh-hPh" id="6jh-cP-C8p"/>
+                        <outlet property="tempetureLabel" destination="7AJ-ef-ALF" id="KZP-Fp-ahJ"/>
+                        <outlet property="weatherIcon" destination="TZ4-bF-zPE" id="J4A-xf-VI9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
