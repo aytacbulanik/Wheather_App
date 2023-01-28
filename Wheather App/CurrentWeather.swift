@@ -15,4 +15,13 @@ struct CurrentWeather {
     let humidity : Double
     let icon : String
     let iconImage : UIImage
+    
+    init(tempeture: Double, precipProbability: Double, summary: String, humidity: Double, icon: String, iconImage: UIImage) {
+        self.tempeture = tempeture
+        self.precipProbability = precipProbability
+        self.summary = summary
+        self.humidity = humidity
+        self.icon = icon
+        self.iconImage = iconImage
+    }
 }

@@ -22,4 +22,5 @@ struct CurrentWeatherModel {
         self.humidity = "% \(Int(data.humidity * 100))"
         self.icon = data.iconImage
     }
+    
 }
