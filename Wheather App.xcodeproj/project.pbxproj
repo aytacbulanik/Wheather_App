@@ -15,6 +15,8 @@
 		52D2C4A42983F53000B12EB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52D2C4A22983F53000B12EB5 /* Main.storyboard */; };
 		52D2C4A62983F53100B12EB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52D2C4A52983F53100B12EB5 /* Assets.xcassets */; };
 		52D2C4A92983F53100B12EB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52D2C4A72983F53100B12EB5 /* LaunchScreen.storyboard */; };
+		52E660372985835D00F069EB /* JsonDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E660362985835D00F069EB /* JsonDownloader.swift */; };
+		52E66039298584A500F069EB /* WeatherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E66038298584A500F069EB /* WeatherError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		52D2C4A52983F53100B12EB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52D2C4A82983F53100B12EB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52D2C4AA2983F53100B12EB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E660362985835D00F069EB /* JsonDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDownloader.swift; sourceTree = "<group>"; };
+		52E66038298584A500F069EB /* WeatherError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				52D2C4AA2983F53100B12EB5 /* Info.plist */,
 				523E718E298411B0004B6566 /* CurrentWeather.swift */,
 				523E719029841217004B6566 /* CurrentWeatherModel.swift */,
+				52E660362985835D00F069EB /* JsonDownloader.swift */,
+				52E66038298584A500F069EB /* WeatherError.swift */,
 			);
 			path = "Wheather App";
 			sourceTree = "<group>";
@@ -146,9 +152,11 @@
 			files = (
 				52D2C4A12983F53000B12EB5 /* ViewController.swift in Sources */,
 				52D2C49D2983F53000B12EB5 /* AppDelegate.swift in Sources */,
+				52E660372985835D00F069EB /* JsonDownloader.swift in Sources */,
 				523E719129841217004B6566 /* CurrentWeatherModel.swift in Sources */,
 				523E718F298411B0004B6566 /* CurrentWeather.swift in Sources */,
 				52D2C49F2983F53000B12EB5 /* SceneDelegate.swift in Sources */,
+				52E66039298584A500F069EB /* WeatherError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
