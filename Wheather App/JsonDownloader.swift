@@ -27,6 +27,19 @@ class JsonDownloader {
                 return
             }
             if httpResponse.statusCode == 200 {
+                if let data = data {
+                    
+                    do {
+                        let json = try JSONSerialization.jsonObject(with: data) as? JSON
+                        completion(json , nil)
+                    } catch {
+                        completion(nil , WeatherError.jsonParsingError)
+                    }
+                    
+                }else {
+                    completion(nil , WeatherError.invalidData)
+                }
+                
                 
             }else {
                 completion(nil , WeatherError.responseUnSucceffull(statusCode: httpResponse.statusCode))
