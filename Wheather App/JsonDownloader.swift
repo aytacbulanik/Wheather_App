@@ -26,7 +26,11 @@ class JsonDownloader {
                 completion(nil, WeatherError.requestError)
                 return
             }
-            
+            if httpResponse.statusCode == 200 {
+                
+            }else {
+                completion(nil , WeatherError.responseUnSucceffull(statusCode: httpResponse.statusCode))
+            }
             
         }
         return task

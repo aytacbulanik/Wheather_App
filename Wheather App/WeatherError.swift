@@ -9,4 +9,5 @@ import Foundation
 
 enum WeatherError {
     case requestError
+    case responseUnSucceffull(statusCode : Int)
 }
