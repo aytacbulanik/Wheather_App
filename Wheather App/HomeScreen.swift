@@ -13,9 +13,19 @@ class HomeScreen: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        getUrlData()
     }
     
-
+    func getUrlData() {
+        let url = URL(string: "https://api.apilayer.com/fixer/symbols?apikey=VAfbnBSmAnnGK0KUkt8h1zDLRQ6LqOoi")
+        let session = URLSession.shared
+        let task = session.dataTask(with: url!) { data, response, error in
+            print(data)
+            print(response)
+            print(error)
+        }
+        task.resume()
+    }
    
 
 }
