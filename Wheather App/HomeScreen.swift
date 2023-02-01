@@ -23,9 +23,15 @@ class HomeScreen: UIViewController {
         let task = session.dataTask(with: anotherUrl!) { data, response, error in
             if let data = data {
                 do {
-                    let jsonResponse  = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers)
+                    let jsonResponse  = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers) as! Dictionary<String,Any>
                     DispatchQueue.main.async {
-                        print(jsonResponse)
+                        // ilk olarak ana json objesini parse ediyoruz.
+                        if let rates = jsonResponse["rates"] as? [String : Any] {
+                            // burada ise alt katmandaki veriye ulaşıp onu parse ediyoruz.
+                            if let cad = rates["CAD"] as? Double {
+                                print(cad)
+                            }
+                        }
                     }
                 }catch {
                     print(error.localizedDescription)
