@@ -13,7 +13,7 @@ class HomeScreen: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var statusLabel: UILabel!
-    
+    let weatherManager = WeatherMenager()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,6 +28,9 @@ class HomeScreen: UIViewController, UITextFieldDelegate {
     }
     // textfiled içerisinin boşaltacak
     func textFieldDidEndEditing(_ textField: UITextField) {
+        if let city = textField.text {
+            weatherManager.fetchWeather(cityName: city)
+        }
         textField.text = ""
     }
     //textfield boş kontrolü yapacak
