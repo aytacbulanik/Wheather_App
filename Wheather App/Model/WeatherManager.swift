@@ -12,7 +12,24 @@ struct WeatherMenager {
     
     func fetchWeather(cityName : String) {
         let urlString = "\(weatherUrl)&q=\(cityName)"
-        print(urlString)
+        performRequest(urlString: urlString)
     }
     
+    func performRequest(urlString : String ) {
+        if let url = URL(string: urlString) {
+            let session = URLSession(configuration: .default)
+            
+            let task = session.dataTask(with: url) { data, response, error in
+                if error != nil {
+                    print(error?.localizedDescription)
+                    return
+                }
+                if let safeData = data {
+                    let dataString = String(data: safeData, encoding: .utf8)
+                    print(dataString)
+                }
+            }
+            task.resume()
+        }
+    }
 }
