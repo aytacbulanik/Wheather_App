@@ -29,8 +29,7 @@ class HomeScreen: UIViewController, UITextFieldDelegate {
     // textfiled içerisinin boşaltacak
     func textFieldDidEndEditing(_ textField: UITextField) {
         if let city = textField.text {
-            let url = weatherManager.fetchWeather(cityName: city)
-            //weatherManager.performRequest(urlString: url)
+        weatherManager.fetchWeather(cityName: city)
         }
         textField.text = ""
     }
