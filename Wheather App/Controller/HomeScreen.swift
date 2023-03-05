@@ -7,29 +7,48 @@
 
 import UIKit
 
-class HomeScreen: UIViewController {
+class HomeScreen: UIViewController, UITextFieldDelegate {
 
     
     
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var wheatherIconImage: UIImageView!
+    @IBOutlet weak var cityLabel: UILabel!
     
     let weatherManager = WeatherMenager()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        searchTextField.delegate = self
         
     }
     //klavyeyi kapatacak
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        searchTextField.endEditing(true)
+        return true
+    }
    
     // textfiled içerisinin boşaltacak
-   
-    //textfield boş kontrolü yapacak
-    
-    @IBAction func serachButtonPressed(_ sender: UIButton) {
-        
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        searchTextField.text = ""
     }
-    // ekranda herhangi bir yere dokununca klavye kapatılacak
+    
+    //textfield boş kontrolü yapacak
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        if textField.text != "" {
+            return true
+        } else {
+            textField.placeholder = "Type something"
+            return false
+        }
+    }
+    
+    
+    // search butonu için kodlar buraya yazıldı
+    @IBAction func serachButtonPressed(_ sender: UIButton) {
+        searchTextField.endEditing(true)
+    }
+    
     
 
 }

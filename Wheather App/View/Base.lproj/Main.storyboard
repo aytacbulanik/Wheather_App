@@ -101,8 +101,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cityLabel" destination="cCt-dW-1Tp" id="gQm-45-Gby"/>
                         <outlet property="searchTextField" destination="Ldp-Sf-i6m" id="xRE-jH-4SE"/>
                         <outlet property="statusLabel" destination="8qi-Ww-mRB" id="xPs-d8-Lpv"/>
+                        <outlet property="wheatherIconImage" destination="bzE-mD-mBW" id="lIi-MU-YkS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
